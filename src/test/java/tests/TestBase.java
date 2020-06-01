@@ -75,6 +75,5 @@ public class TestBase {
     private WebElement waitForElementToBeVisible(By locator, int seconds) {
         WebDriverWait wait = new WebDriverWait(driver, seconds);
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-
     }
 }

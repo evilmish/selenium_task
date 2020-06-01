@@ -1,15 +1,10 @@
 package tests;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
 public class SimpleTest extends TestBase {
-
-    @FindBy(css = "#menu-item-127")
-    WebElement careersMenuItem;
 
     @Test
     public void professionalSkillsVerificationTest() {
@@ -27,7 +22,5 @@ public class SimpleTest extends TestBase {
         // contains exactly 5 skills.
         int skills = getSkillsQuantity();
         Assert.assertEquals(skills, 5, "Actual amount of skills is wrong");
-
     }
-
 }
